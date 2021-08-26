@@ -1,0 +1,97 @@
+[
+  {
+    "id": 278,
+    "review": 4.6,
+    "features": [
+      "Free Wifi",
+      "Free Breakfast",
+      "Free Ride",
+      "Free Coupons",
+      "Free Everything"
+    ],
+    "title": "canterbury",
+    "info": "This is a very good place blah blah blah...",
+    "price": 6790.78,
+    "location": {
+      "Latitude": 78.90,
+      "Longitude": 56.45,
+      "address": "67-A New Missouri Road"
+    }
+  },
+  {
+    "id": 288,
+    "review": 4.6,
+    "features": [
+      "Free Wifi",
+      "Free Breakfast",
+      "Free Ride",
+      "Free Coupons",
+      "Free Everything"
+    ],
+    "title": "Huston",
+    "info": "This is a very bad place blah blah blah...",
+    "price": 6780.78,
+    "location": {
+      "Latitude": 98.90,
+      "Longitude": 53.45,
+      "address": "67-B New Missouri Road"
+    }
+  },
+  {
+    "id": 298,
+    "review": 4.6,
+    "features": [
+      "Free Wifi",
+      "Free Breakfast",
+      "Free Ride",
+      "Free Coupons",
+      "Free Everything"
+    ],
+    "title": "Dehradun",
+    "info": "This is a very lovely place blah blah blah...",
+    "price": 9790.78,
+    "location": {
+      "Latitude": 38.90,
+      "Longitude": 16.45,
+      "address": "67-C New Missouri Road"
+    }
+  },
+  {
+    "id": 458,
+    "review": 4.6,
+    "features": [
+      "Free Wifi",
+      "Free Breakfast",
+      "Free Ride",
+      "Free Coupons",
+      "Free Everything"
+    ],
+    "title": "Dartmouth",
+    "info": "This is a very hungry place blah blah blah...",
+    "price": 89790.78,
+    "location": {
+      "Latitude": 38.90,
+      "Longitude": 66.45,
+      "address": "67-D New Missouri Road"
+    }
+  },
+  {
+    "id": 908,
+    "review": 4.6,
+    "features": [
+      "Free Wifi",
+      "Free Breakfast",
+      "Free Ride",
+      "Free Coupons",
+      "Free Everything"
+    ],
+    "title": "KotlinHands",
+    "info": "This is a very cool place blah blah blah...",
+    "price": 2790.78,
+    "location": {
+      "Latitude": 78.90,
+      "Longitude": 56.45,
+      "address": "67-E New Missouri Road"
+    }
+  }
+]
