@@ -27,6 +27,7 @@ class _PlacesInfoScreenState extends State<PlacesInfoScreen> {
     ),
   ];
 
+  List<bool> values = List.filled(10, false);
   int _currentIndex = 0;
 
   @override
@@ -150,8 +151,41 @@ class _PlacesInfoScreenState extends State<PlacesInfoScreen> {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(15),
               child: Container(
-                height: MediaQuery.of(context).size.height * 0.30,
-                color: Colors.red,
+                height: MediaQuery.of(context).size.height * 0.35,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 2,
+                    color: Colors.grey,
+                  ),
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: ListView(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Text('Features:-'),
+                        Text('Add on Features'),
+                      ],
+                    ),
+                    for (int i = 0; i < 9; ++i)
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Flexible(child: Text('Feature ${i + 1}')),
+                          Flexible(child: Text('Feature ${i + 1}')),
+                          Checkbox(
+                            value: this.values[i],
+                            onChanged: (bool? value) {
+                              setState(() {
+                                this.values[i] = value!;
+                              });
+                            },
+                          ),
+                        ],
+                      )
+                  ],
+                ),
               ),
             ),
           ),
@@ -198,7 +232,7 @@ class _PlacesInfoScreenState extends State<PlacesInfoScreen> {
                   ),
                   Divider(),
                   ListTile(
-                    onTap: (){},
+                    onTap: () {},
                     title: Text(
                       'See 100 More Reviews',
                     ),
@@ -267,18 +301,5 @@ class _PlacesInfoScreenState extends State<PlacesInfoScreen> {
       //   ),
       // ),
     );
-  }
-
-  void _showNextCard() {
-    setState(() {
-      _currentIndex = (_currentIndex + 1) % _flashCards.length;
-    });
-  }
-
-  void _showPreviousCard() {
-    setState(() {
-      _currentIndex =
-          (_currentIndex - 1 >= 0) ? _currentIndex - 1 : _flashCards.length - 1;
-    });
   }
 }
